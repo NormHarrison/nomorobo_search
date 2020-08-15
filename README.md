@@ -48,8 +48,8 @@ WORD_BLACKLIST = {
 After the script has been started, you'll started to see indications like `[SUCCSS]`, `[FAILURE]` and `[NOTICE]` as search results are parsed and phone numbers are eithe found or not found.
 Results are printed to the CLI in Python dictionary format, which is how they're stored internally too, this can easily be turned into proper JSON format text for use elsewhere.
 
-So you can more easily access results after the script has been ran, upon completion, a text file will be created in the directory where the script was ran named `results_<date>_<time>.txt`.
-It's content shoudld look like this:
+So you can more easily access results after the script has been ran, upon completion, a text file will be created in the directory from where the script was started, named `results_<date>_<time>.txt`.
+It's content should look like this:
 
 ```
 [Results for: subscription site:nomorobo.com]
