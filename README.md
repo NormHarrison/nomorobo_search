@@ -45,6 +45,25 @@ WORD_BLACKLIST = {
 }
 ```
 
+After the script has been started, you'll started to see indications like `[SUCCSS]`, `[FAILURE]` and `[NOTICE]` as search results are parsed and phone numbers are eithe found or not found.
+Results are printed to the CLI in Python dictionary format, which is how they're stored internally too, this can easily be turned into proper JSON format text for use elsewhere.
+
+So you can more easily access results after the script has been ran, upon completion, a text file will be created in the directory where the script was ran named `results_<date>_<time>.txt`.
+It's content shoudld look like this:
+
+```
+[Results for: subscription site:nomorobo.com]
+
+---- result0 ----
+Number: 877XXXXXXX
+Transcript: 33 mins ago - Listen; Transcript Dear Customer this call is from the billing department in regards to let you know that subscription which you have been taken is expired you ...
+
+---- result1 ----
+Number: 903XXXXXXX
+Transcript: no_transcript_found
+
+```
+
 
 ## Notes
 
@@ -53,6 +72,3 @@ with a web browser, meaning it won't work with Firefox. So a Chromium based brow
 but when using geckodriver, certain elements can't be interacted with via the click() and/or send_keys() methods.
 
 Chrome is set to run in headless mode by default.
-
-
-To be continued
