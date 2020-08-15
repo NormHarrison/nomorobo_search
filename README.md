@@ -28,7 +28,7 @@ This is a Python list containg the search queries for the script to make in sequ
 
 ##
 
-This is optional, but can help avoid possible unwanted results. Each query you add to list mentioned above can have a corresponding list of 'bad' words to use
+This is optional, but can help avoid possible unwanted results. Each query you add to the list mentioned above can have a corresponding list of 'bad' words to use
 for avoiding certain search result entries in Google. If an entries preview text contains one of the words in the current queries blacklist, then it will be skipped over.
 
 ```python
@@ -49,8 +49,7 @@ WORD_BLACKLIST = {
 ## Notes
 
 This script unfortunately does not work when using the [geckodriver](https://github.com/mozilla/geckodriver) to interact
-with a web browser, meaning it won't work with Firefox. So a Chromium based browser in combination with with [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) is needed. I'm not 100% sure why currently,
-but when using geckodriver, certain elements can't be interacted with via the click() and/or send_keys() methods.
+with a web browser, meaning it won't work with Firefox. So a Chromium based browser in combination with [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) is needed. I'm not 100% sure why currently, but when using geckodriver, certain elements can't be interacted with via the `click()` and/or `send_keys()` methods.
 
 Chrome is set to run in headless mode by default.
 
