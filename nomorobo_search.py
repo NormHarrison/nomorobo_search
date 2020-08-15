@@ -30,17 +30,21 @@ be interacted with via send_keys() either.
 SEARCH_ENGINE = 'https://google.com'
 
 # ---> ADD YOUR SEARCH QUERIES TO THIS LIST <---
-QUERIES = ['ssa site:nomorobo.com',
-           'amazon site:nomorobo.com',
-           'refund site:nomorobo.com',
-           'subscription site:nomorobo.com',
-           'computer site:nomorobo.com']
+QUERIES = [
+ 'ssa site:nomorobo.com',
+ 'amazon site:nomorobo.com',
+ 'refund site:nomorobo.com',
+ 'subscription site:nomorobo.com',
+ 'computer site:nomorobo.com'
+]
 
-# This is optional, but can help avoid possible unwanted results.
+"""
+This is optional, but can help avoid possible unwanted results.
 Each query above can have a corresponding list of 'bad' words to use
 for avoiding certain search result entries in Google, if an entries
 preview text contains one of the words in the current queries blacklist,
 then it will be skipped over.
+"""
 
 WORD_BLACKLIST = {
  'ssa':[
